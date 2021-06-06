@@ -8,12 +8,19 @@ import (
 )
 
 var resultPool *sync.Pool
+
 type resultFunc func(code int, msg interface{}, err interface{}) func(sf PutStatusCodeFunc)
 type PutStatusCodeFunc func(c *gin.Context, v interface{})
 
 type RetErrorType struct {
 	ModelName string
-	Err error
+	Err       error
+}
+
+type Result struct {
+	Code int         `json:"code"`
+	Msg  interface{} `json:"msg"`
+	Err  interface{} `json:"err"`
 }
 
 func init() {
@@ -24,17 +31,11 @@ func init() {
 	}
 }
 
-type Result struct {
-	Code int         `json:"code"`
-	Msg  interface{} `json:"msg"`
-	Err interface{} `json:"err"`
-}
-
 func NewResult(code int, msg interface{}, err interface{}) *Result {
 	return &Result{
 		Code: code,
-		Msg: msg,
-		Err: err,
+		Msg:  msg,
+		Err:  err,
 	}
 }
 
