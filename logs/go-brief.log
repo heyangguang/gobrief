@@ -180,3 +180,7 @@
 2021-06-06T23:31:58.694+0800	DEBUG	middleware/logger.go:18	中间件加载
 2021-06-06T23:31:58.695+0800	DEBUG	api/sys_user.go:19	&{11 dddd }
 2021-06-06T23:31:58.695+0800	INFO	gin@v1.7.2/context.go:165	/api/v1/user	{"status": 200, "method": "POST", "path": "/api/v1/user", "query": "", "ip": "127.0.0.1", "errors": "", "cost": 0.001157427, "user-agent": "PostmanRuntime/7.28.0"}
+{"level":"DEBUG","time":"2021-06-07T23:19:19.883+0800","caller":"api/sys_user.go:19","msg":"&{11 dddd }"}
+{"level":"INFO","time":"2021-06-07T23:19:19.884+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"POST","path":"/api/v1/user","query":"","ip":"127.0.0.1","errors":"","cost":0.003244965,"user-agent":"PostmanRuntime/7.28.0"}
+{"level":"DEBUG","time":"2021-06-07T23:19:35.824+0800","caller":"api/sys_user.go:19","msg":"&{11 dddd }"}
+{"level":"INFO","time":"2021-06-07T23:19:35.824+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"POST","path":"/api/v1/user","query":"","ip":"127.0.0.1","errors":"","cost":0.000932939,"user-agent":"PostmanRuntime/7.28.0"}
