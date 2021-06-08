@@ -9,7 +9,7 @@ import (
 
 var resultPool *sync.Pool
 
-type resultFunc func(code int, msg interface{}, err interface{}) func(sf PutStatusCodeFunc)
+type RetFunc func(code int, msg interface{}, data interface{}, err interface{}) func(sf PutStatusCodeFunc)
 type PutStatusCodeFunc func(c *gin.Context, v interface{})
 
 type RetErrorType struct {
@@ -21,20 +21,22 @@ type Result struct {
 	Code int         `json:"code"`
 	Msg  interface{} `json:"msg"`
 	Err  interface{} `json:"err"`
+	Data interface{} `json:"data"`
 }
 
 func init() {
 	resultPool = &sync.Pool{
 		New: func() interface{} {
-			return NewResult(0, nil, nil)
+			return NewResult(0, nil, nil, nil)
 		},
 	}
 }
 
-func NewResult(code int, msg interface{}, err interface{}) *Result {
+func NewResult(code int, msg interface{}, data interface{}, err interface{}) *Result {
 	return &Result{
 		Code: code,
 		Msg:  msg,
+		Data: data,
 		Err:  err,
 	}
 }
@@ -49,12 +51,13 @@ func E(mn string, e error) RetErrorType {
 
 // R 用于统一构建返回结构体
 // 其中为了处理validator.ValidationErrors特殊的错误返回，使用了RetErrorType
-func R(c *gin.Context) resultFunc {
-	return func(code int, msg interface{}, err interface{}) func(sf PutStatusCodeFunc) {
+func R(c *gin.Context) RetFunc {
+	return func(code int, msg interface{}, data interface{}, err interface{}) func(sf PutStatusCodeFunc) {
 		r := resultPool.Get().(*Result)
 		defer resultPool.Put(r)
 		r.Code = code
 		r.Msg = msg
+		r.Data = data
 		r.Err = err
 		if v, ok := err.(RetErrorType); ok {
 			for _, mf := range form_validation.ModelFuncSlice {

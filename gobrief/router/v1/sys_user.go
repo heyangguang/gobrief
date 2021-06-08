@@ -5,9 +5,10 @@ import (
 	"gobrief/app/api"
 )
 
-func InitUserRouter(g *gin.RouterGroup)  {
+func InitUserRouter(g *gin.RouterGroup) {
 	rt := g.Group("/user")
 	{
 		rt.POST("", api.UserCreate)
+		rt.GET("", api.UserList)
 	}
 }
