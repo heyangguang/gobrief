@@ -184,3 +184,60 @@
 {"level":"INFO","time":"2021-06-07T23:19:19.884+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"POST","path":"/api/v1/user","query":"","ip":"127.0.0.1","errors":"","cost":0.003244965,"user-agent":"PostmanRuntime/7.28.0"}
 {"level":"DEBUG","time":"2021-06-07T23:19:35.824+0800","caller":"api/sys_user.go:19","msg":"&{11 dddd }"}
 {"level":"INFO","time":"2021-06-07T23:19:35.824+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"POST","path":"/api/v1/user","query":"","ip":"127.0.0.1","errors":"","cost":0.000932939,"user-agent":"PostmanRuntime/7.28.0"}
+{"level":"INFO","time":"2021-06-08T15:23:51.226+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"GET","path":"/api/v1/user","query":"","ip":"::1","errors":"","cost":0.000281345,"user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37"}
+{"level":"INFO","time":"2021-06-08T15:39:39.992+0800","caller":"gin@v1.7.2/context.go:165","msg":"/api/v1/user","status":200,"method":"GET","path":"/api/v1/user","query":"","ip":"::1","errors":"","cost":0.000077875,"user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37"}
+{"level":"ERROR","time":"2021-06-23T23:03:12.163+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: did you forget to escape a param value?"}
+{"level":"ERROR","time":"2021-06-23T23:03:50.558+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: did you forget to escape a param value?"}
+{"level":"ERROR","time":"2021-06-23T23:03:57.348+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: did you forget to escape a param value?"}
+{"level":"ERROR","time":"2021-06-23T23:04:39.823+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: did you forget to escape a param value?"}
+{"level":"ERROR","time":"2021-06-23T23:05:05.856+0800","caller":"dbs/init.go:23","msg":"连接数据库失败:invalid DSN: did you forget to escape a param value?"}
+{"level":"INFO","time":"2021-06-23T23:05:22.646+0800","caller":"cmd/run.go:50","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-23T23:05:47.954+0800","caller":"cmd/run.go:50","msg":"Listening and serving HTTP on :9090"}
+{"level":"INFO","time":"2021-06-23T23:07:38.244+0800","caller":"cmd/run.go:50","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:15:26.768+0800","caller":"cmd/run.go:50","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:15:39.888+0800","caller":"cmd/run.go:50","msg":"Listening and serving HTTP on :8080"}
+{"level":"ERROR","time":"2021-06-24T11:25:41.307+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: missing the slash separating the database name"}
+{"level":"ERROR","time":"2021-06-24T11:26:59.676+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: missing the slash separating the database name"}
+{"level":"ERROR","time":"2021-06-24T11:27:09.527+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: missing the slash separating the database name"}
+{"level":"ERROR","time":"2021-06-24T11:27:21.931+0800","caller":"dbs/init.go:21","msg":"连接数据库失败:invalid DSN: missing the slash separating the database name"}
+{"level":"INFO","time":"2021-06-24T11:27:54.727+0800","caller":"cmd/run.go:55","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:28:02.868+0800","caller":"cmd/run.go:55","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:28:22.629+0800","caller":"cmd/run.go:55","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:28:32.070+0800","caller":"cmd/run.go:55","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:29:32.735+0800","caller":"cmd/run.go:60","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:30:00.730+0800","caller":"cmd/run.go:60","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:30:56.308+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:31:06.110+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:31:49.728+0800","caller":"cmd/run.go:55","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:32:32.790+0800","caller":"cmd/run.go:54","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:32:39.385+0800","caller":"cmd/run.go:54","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T11:43:05.909+0800","caller":"cmd/run.go:57","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:43:53.992+0800","caller":"cmd/run.go:57","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:44:25.886+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:44:34.660+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:44:39.120+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:45:44.710+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:45:49.926+0800","caller":"cmd/run.go:56","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:47:17.735+0800","caller":"cmd/run.go:57","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:47:26.317+0800","caller":"cmd/run.go:57","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:48:10.924+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:48:27.052+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:48:35.569+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:48:42.927+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:49:08.177+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:49:11.223+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:49:20.329+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:51:28.002+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T11:51:39.315+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:48:01.568+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:48:09.960+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:48:41.103+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:48:58.881+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:49:10.284+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T14:49:22.654+0800","caller":"cmd/run.go:59","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:49:45.702+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8070"}
+{"level":"INFO","time":"2021-06-24T14:49:49.172+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T14:50:02.975+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T14:50:07.979+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8090"}
+{"level":"INFO","time":"2021-06-24T14:55:46.551+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8080"}
+{"level":"INFO","time":"2021-06-24T14:56:07.553+0800","caller":"cmd/run.go:58","msg":"Listening and serving HTTP on :8090"}

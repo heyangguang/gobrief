@@ -12,7 +12,8 @@ require (
 	github.com/go-playground/validator/v10 v10.4.1
 	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/natefinch/lumberjack v2.0.0+incompatible
-	github.com/pelletier/go-toml v1.9.2 // indirect
+	github.com/spf13/cobra v1.1.3
+	github.com/spf13/viper v1.8.0
 	go.uber.org/zap v1.17.0
 	golang.org/x/sys v0.0.0-20210603125802-9665404d3644 // indirect
 	gorm.io/driver/mysql v1.1.0
