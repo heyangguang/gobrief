@@ -58,7 +58,8 @@ func runStart(logPath, logLevel, db string, port int) {
 	}
 
 	r := router.InitRouter()
-	r.Run(fmt.Sprintf(":%d", port))
+	// TODO:后面会增加容错与优雅退出
+	_ = r.Run(fmt.Sprintf(":%d", port))
 }
 
 func init() {
