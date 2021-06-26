@@ -10,7 +10,6 @@ import (
 	"gobrief/gobrief/router"
 )
 
-var logLevel string
 var configPath string
 
 // runCmd represents the run command
@@ -40,7 +39,7 @@ func runStart() {
 	InitFormValidation()
 
 	// !DEBUG
-	if logLevel != "DEBUG" {
+	if AllConfig.LogLevel != "DEBUG" {
 		gin.SetMode(gin.ReleaseMode)
 		logger.Info(fmt.Sprintf("Listening and serving HTTP on :%d", AllConfig.Port))
 	}
