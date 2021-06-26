@@ -1,4 +1,4 @@
-log_path: "./logs/go-brief.log"
-log_level: "INFO"
-db_connect: "root:123456@(127.0.0.1:3306)/go_brief"
-port: 8090
+LogPath: "./logs/go-brief.log"
+LogLevel: "INFO"
+DBConnect: "root:123456@(127.0.0.1:3306)/go_brief"
+Port: 8090
