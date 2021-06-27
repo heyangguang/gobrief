@@ -69,7 +69,7 @@ gobrief
 # 计划任务
 - [X] 配置管理，区分dev于prod。
 - [X] 增加热重启基于`air`，开发过程中使用`air`，生产不要使用。
-- [ ] 增加命令行，使用命令直接构建出一个gobrief。
+- [X] 增加命令行gobrief-tool，使用命令直接构建出一个gobrief。项目地址：https://github.com/heyangguang/wisdom-client
 
 # 后期规划
 等开发完计划任务以后，我会使用gobrief来开发一个带有`权限管理、用户管理、角色管理、API管理`的参考项目。
